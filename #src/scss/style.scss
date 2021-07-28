@@ -1,0 +1,23 @@
+@import "mixin";
+@import "variables";
+@import "fonts";
+@import "icons";
+@import "null";
+
+
+
+body {
+  color: $colorMain;
+}
+
+._container {
+  max-width: $maxWidthContainer + px;
+  padding: 0px 10px;
+  margin: 0 auto;
+ 
+}
+
+
+
+
+@import "bem/header.scss";
