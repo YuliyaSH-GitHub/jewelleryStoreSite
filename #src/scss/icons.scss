@@ -26,33 +26,22 @@
   }
 }
 
-._icon-account:before {
-	content: "\e900";
-  }
-  ._icon-arrow-down:before {
-	content: "\e901";
-  }
-  ._icon-basket:before {
-	content: "\e902";
-  }
-  ._icon-check:before {
-	content: "\e903";
-  }
-  ._icon-email:before {
-	content: "\e904";
-  }
-  ._icon-new-window:before {
-	content: "\e905";
-  }
-  ._icon-phone:before {
-	content: "\e906";
-  }
-  ._icon-place:before {
-	content: "\e907";
-  }
-  ._icon-polygon:before {
-	content: "\e908";
-  }
-  ._icon-whatsapp:before {
-	content: "\e909";
-  }
+._icon-arrow:before {
+  content: "\e900";
+  color: #fff;
+}
+._icon-favorites:before {
+  content: "\e901";
+  color: #fff;
+}
+._icon-personal:before {
+  content: "\e902";
+  color: #fff;
+}
+._icon-search:before {
+  content: "\e903";
+  color: #fff;
+}
+._icon-see-more:before {
+  content: "\e904";
+}
