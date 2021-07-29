@@ -4,7 +4,7 @@
 
 body.lock {
   overflow: hidden;
-  @media (max-width: $md3+px) {
+  @media (max-width: $md6+px) {
     overflow: visible;
   }
 }
@@ -58,7 +58,7 @@ body.lock {
   &__list {
     position: relative;
     z-index: 5;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md6+px) {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
@@ -73,7 +73,7 @@ body.lock {
         margin-right: 20px;
       }
     }
-    @media (max-width: $md3+px) {
+    @media (max-width: $md6+px) {
       margin: 10px 20px;
     }
   }
@@ -82,10 +82,10 @@ body.lock {
     position: relative;
     z-index: 4;
     display: none;
-    @media (max-width: $md3+px) {
+    @media (max-width: $md6+px) {
       display: block;
     }
-    @media (min-width: 550px) and (max-width: $md3+px) {
+    @media (min-width: $md4+px) and (max-width: $md6+px) {
       flex: 0 1 107px;
     }
   }
@@ -105,13 +105,17 @@ body.lock {
     text-transform: uppercase;
 
     @media (max-width: $md3+px) {
-      font-size: 40px;
-      line-height: 50px;
+      font-size: 44px;
+      line-height: 54px;
     }
     @media (max-width: $md4+px) {
       font-size: 30px;
       line-height: 40px;
       margin: 0 5px;
+    }
+    @media (min-width: $md4+px) and (max-width: $md3+px) {
+      flex: 0 0 265px;
+      margin: 0 10px;
     }
   }
 
@@ -120,7 +124,7 @@ body.lock {
       flex: 0 1 282px;
       justify-content: flex-end;
     }
-    @media (min-width: 550px) and (max-width: $md3+px) {
+    @media (min-width: $md4) and (max-width: $md6+px) {
       flex: 0 1 107px;
     }
   }
@@ -135,6 +139,7 @@ body.lock {
       @media (max-width: $md2+px) {
         margin: 0 20px 0 0;
       }
+      
       @media (max-width: $md4+px) {
         margin: 0 10px 0 0;
       }

@@ -465,6 +465,57 @@ body.lock {
   }
 }
 
+@media (max-width: 1023.98px) {
+  ._burger {
+    display: block;
+  }
+
+  ._menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #35271d;
+    padding: 60px 10px 20px 10px;
+  }
+
+  ._menu.active {
+    top: 0;
+  }
+
+  body.lock {
+    overflow: visible;
+  }
+
+  .b-header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .b-header__list-item {
+    margin: 10px 20px;
+  }
+
+  .b-header__burger {
+    display: block;
+  }
+}
+
 @media (max-width: 991.98px) {
   ._container {
     padding: 0px 20px;
@@ -518,62 +569,13 @@ body.lock {
 }
 
 @media (max-width: 767.98px) {
-  ._burger {
-    display: block;
-  }
-
-  ._menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    background-color: #35271d;
-    padding: 60px 10px 20px 10px;
-  }
-
-  ._menu.active {
-    top: 0;
-  }
-
-  body.lock {
-    overflow: visible;
-  }
-
   .b-header {
     min-height: 600px;
   }
 
-  .b-header__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 0 10px;
-    margin-top: 20px;
-  }
-
-  .b-header__list-item {
-    margin: 10px 20px;
-  }
-
-  .b-header__burger {
-    display: block;
-  }
-
   .b-header__logotype {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 44px;
+    line-height: 54px;
   }
 
   .b-modernJewelry_indent {
@@ -668,13 +670,24 @@ body.lock {
   }
 }
 
-@media (min-width: 550px) and (max-width: 767.98px) {
+@media (min-width: 479.98px) and (max-width: 1023.98px) {
   .b-header__burger {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 107px;
             flex: 0 1 107px;
   }
+}
 
+@media (min-width: 479.98px) and (max-width: 767.98px) {
+  .b-header__logotype {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 265px;
+            flex: 0 0 265px;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 479.98) and (max-width: 1023.98px) {
   .b-header__navIcons {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 107px;

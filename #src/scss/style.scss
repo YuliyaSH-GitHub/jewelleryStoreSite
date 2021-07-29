@@ -54,7 +54,7 @@ body {
   height: 21px;
   
   display: none;
-  @media (max-width: $md3+px) {
+  @media (max-width: $md6+px) {
     display: block;
   }
 }
@@ -93,7 +93,7 @@ body {
 }
 
 ._menu {
-  @media (max-width: $md3+px) {
+  @media (max-width: $md6+px) {
     position: fixed;
     top: -100%;
     left: 0;
@@ -106,7 +106,7 @@ body {
   }
 }
 ._menu.active {
-  @media (max-width: $md3+px) {
+  @media (max-width: $md6+px) {
     top: 0;
   }
 }
