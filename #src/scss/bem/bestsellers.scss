@@ -1,20 +1,46 @@
 .b-bestsellers {
   &_indent {
-    padding: 10px 0 150px;
+    padding: 20px 0 100px;
     @media (max-width: $md2+px) {
-      padding: 10px 0 100px;
+      padding: 20px 0 80px;
     }
     @media (max-width: $md3+px) {
-      padding: 10px 0 80px;
+      padding: 20px 0 50px;
     }
     @media (max-width: $md4+px) {
-      padding: 10px 0 30px;
+      padding: 20px 0 30px;
     }
   }
 
   &__title {
     font-size: 90px;
     line-height: 108px;
+
+    @media (max-width: $md2+px) {
+      font-size: 70px;
+      line-height: 88px;
+    }
+
+    @media (max-width: $md3+px) {
+      font-size: 60px;
+      line-height: 78px;
+    }
+
+    @media (max-width: $md4+px) {
+      font-size: 46px;
+      line-height: 54px;
+    }
+
+    &_indent {
+      margin: 0 0 100px 0;
+      @media (max-width: $md3+px) {
+        margin: 0 0 50px 0;
+      }
+  
+      @media (max-width: $md4+px) {
+        margin: 0 0 30px 0;
+      }
+    }
   }
 
   &__items {
@@ -56,8 +82,13 @@
   }
 
   &__goodsName {
+    display: block;
     font-size: 22px;
     line-height: 32px;
+    color: inherit;
+    &:hover {
+      color: lighten($colorMain, 20%);
+    }
     @media (max-width: $md4+px) {
       font-size: 18px;
       line-height: 28px;
