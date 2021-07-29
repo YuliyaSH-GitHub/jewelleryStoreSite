@@ -210,6 +210,10 @@ body {
   color: #cfb88f;
 }
 
+.b-main {
+  background-color: #e5e5e5;
+}
+
 ._burger {
   position: relative;
   z-index: 4;
@@ -337,10 +341,6 @@ body.lock {
   margin: 0 25px 0 0;
 }
 
-.b-modernJewelry {
-  background-color: #e5e5e5;
-}
-
 .b-modernJewelry_indent {
   padding: 300px 0;
 }
@@ -423,6 +423,69 @@ body.lock {
   line-height: 27px;
 }
 
+.b-bestsellers_indent {
+  padding: 10px 0 150px;
+}
+
+.b-bestsellers__title {
+  font-size: 90px;
+  line-height: 108px;
+}
+
+.b-bestsellers__items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.b-bestsellers__itemImg {
+  position: relative;
+  max-width: 450px;
+  max-height: 550px;
+}
+
+.b-bestsellers__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.b-bestsellers__like {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-style: 21px;
+  color: #fff;
+}
+
+.b-bestsellers__like:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.b-bestsellers__goodsName {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.b-bestsellers__goodsName_indent {
+  margin: 20px 0 6px 0;
+}
+
+.b-bestsellers__price {
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 @media (min-width: 1024px) {
   .b-header__navLinks {
     -webkit-box-flex: 0;
@@ -462,6 +525,15 @@ body.lock {
 
   .b-modernJewelry__items_indent {
     margin: 0 0 100px 0;
+  }
+
+  .b-bestsellers__items {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 450px));
+    gap: 20px;
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -566,6 +638,10 @@ body.lock {
   .b-modernJewelry__text_indent {
     padding: 10px 0 0 0;
   }
+
+  .b-bestsellers_indent {
+    padding: 10px 0 100px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -617,6 +693,10 @@ body.lock {
     font-size: 14px;
     line-height: 20px;
   }
+
+  .b-bestsellers_indent {
+    padding: 10px 0 80px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -667,6 +747,24 @@ body.lock {
   .b-modernJewelry__text {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .b-bestsellers_indent {
+    padding: 10px 0 30px;
+  }
+
+  .b-bestsellers__goodsName {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .b-bestsellers__goodsName_indent {
+    margin: 15px 0 5px 0;
+  }
+
+  .b-bestsellers__price {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 

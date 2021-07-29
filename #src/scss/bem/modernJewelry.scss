@@ -1,6 +1,4 @@
 .b-modernJewelry {
-  background-color: $colorBack;
-
   &_indent {
     padding: 300px 0;
 
@@ -43,11 +41,8 @@
     overflow: hidden;
 
     @media (max-width: $md3+px) {
-      // align-self: center;
       max-width: 400px;
     }
-
-
 
     &_indent {
       margin: 0 70px 0 0;

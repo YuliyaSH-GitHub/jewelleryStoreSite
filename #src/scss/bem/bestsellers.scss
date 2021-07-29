@@ -1,0 +1,82 @@
+.b-bestsellers {
+  &_indent {
+    padding: 10px 0 150px;
+    @media (max-width: $md2+px) {
+      padding: 10px 0 100px;
+    }
+    @media (max-width: $md3+px) {
+      padding: 10px 0 80px;
+    }
+    @media (max-width: $md4+px) {
+      padding: 10px 0 30px;
+    }
+  }
+
+  &__title {
+    font-size: 90px;
+    line-height: 108px;
+  }
+
+  &__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    @media (max-width: $maxWidthContainer+px) {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 450px));
+      gap: 20px;
+      justify-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__itemImg {
+    position: relative;
+    max-width: 450px;
+    max-height: 550px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__like {
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-style: 21px;
+    color: $colorWhite;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__goodsName {
+    font-size: 22px;
+    line-height: 32px;
+    @media (max-width: $md4+px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &_indent {
+      margin: 20px 0 6px 0;
+      @media (max-width: $md4+px) {
+        margin: 15px 0 5px 0;
+      }
+    }
+  }
+
+  &__price {
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 27px;
+    @media (max-width: $md4+px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
