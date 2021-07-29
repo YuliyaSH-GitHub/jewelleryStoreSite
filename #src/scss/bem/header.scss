@@ -2,17 +2,6 @@
   color: inherit;
 }
 
-%burger {
-  content: "";
-  display: inline-block;
-  background-color: $colorWhite;
-  position: absolute;
-  z-index: 4;
-  width: 100%;
-  height: 3px;
-  left: 0;
-}
-
 body.lock {
   overflow: hidden;
   @media (max-width: $md3+px) {
@@ -60,8 +49,11 @@ body.lock {
     position: relative;
   }
 
-  // &__navLinks {
-  // }
+  &__navLinks {
+    @media (min-width: 1024px) {
+      flex: 0 1 282px;
+    }
+  }
 
   &__list {
     position: relative;
@@ -85,6 +77,19 @@ body.lock {
       margin: 10px 20px;
     }
   }
+
+  &__burger {
+    position: relative;
+    z-index: 4;
+    display: none;
+    @media (max-width: $md3+px) {
+      display: block;
+    }
+    @media (min-width: 550px) and (max-width: $md3+px) {
+      flex: 0 1 107px;
+    }
+  }
+
   &__navLink {
     @extend %colorInherit;
     @extend %familyCirce;
@@ -110,7 +115,15 @@ body.lock {
     }
   }
 
- 
+  &__navIcons {
+    @media (min-width: 1024px) {
+      flex: 0 1 282px;
+      justify-content: flex-end;
+    }
+    @media (min-width: 550px) and (max-width: $md3+px) {
+      flex: 0 1 107px;
+    }
+  }
   &__navIcon {
     @extend %colorInherit;
     font-size: 21px;
@@ -127,5 +140,4 @@ body.lock {
       }
     }
   }
-
 }
