@@ -1,0 +1,131 @@
+%colorInherit {
+  color: inherit;
+}
+
+%burger {
+  content: "";
+  display: inline-block;
+  background-color: $colorWhite;
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 3px;
+  left: 0;
+}
+
+body.lock {
+  overflow: hidden;
+  @media (max-width: $md3+px) {
+    overflow: visible;
+  }
+}
+
+.b-header {
+  background: url("../../img/header/back1.jpg") center/cover no-repeat;
+  background: url("../../img/header/back1.webp") center/cover no-repeat;
+  min-height: 700px;
+  transition: min-height 0.3s ease 0s;
+  @media (max-width: $md3+px) {
+    min-height: 600px;
+  }
+  @media (max-width: $md4+px) {
+    min-height: 400px;
+  }
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    &_indent {
+      padding: 35px 0 0 0;
+      @media (max-width: $md4+px) {
+        padding: 25px 0 0 0;
+      }
+    }
+  }
+  //   &__wrapper::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     z-index: 3;
+  //   }
+
+  &__nav {
+    color: $colorWhite;
+    position: relative;
+  }
+
+  // &__navLinks {
+  // }
+
+  &__list {
+    position: relative;
+    z-index: 5;
+    @media (max-width: $md3+px) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 10px;
+      margin-top: 20px;
+    }
+  }
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 25px;
+      @media (max-width: $md2+px) {
+        margin-right: 20px;
+      }
+    }
+    @media (max-width: $md3+px) {
+      margin: 10px 20px;
+    }
+  }
+  &__navLink {
+    @extend %colorInherit;
+    @extend %familyCirce;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  &__logotype {
+    @extend %colorInherit;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    @media (max-width: $md3+px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media (max-width: $md4+px) {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 5px;
+    }
+  }
+
+ 
+  &__navIcon {
+    @extend %colorInherit;
+    font-size: 21px;
+    @media (max-width: $md4+px) {
+      font-size: 16px;
+    }
+    &:not(:last-child) {
+      margin: 0 25px 0 0;
+      @media (max-width: $md2+px) {
+        margin: 0 20px 0 0;
+      }
+      @media (max-width: $md4+px) {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+
+}

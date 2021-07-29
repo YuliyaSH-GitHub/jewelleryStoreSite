@@ -4,7 +4,9 @@
 @import "icons";
 @import "null";
 
-
+%familyCirce {
+  font-family: Circe;
+}
 
 body {
   color: $colorMain;
@@ -12,12 +14,93 @@ body {
 
 ._container {
   max-width: $maxWidthContainer + px;
-  padding: 0px 10px;
+  padding: 0px 30px;
   margin: 0 auto;
+  @media (max-width: $md2+px)  {
+    padding: 0px 20px;
+  }
+  @media (max-width: $md4+px)  {
+    padding: 0px 15px;
+  }
+}
+._disp-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+._hoverLink {
+  &:hover {
+    color: $colorHover;
+  }
  
 }
 
+//==============================================
+._burger {
+  display: none;
+  position: relative;
+  width: 28px;
+  height: 21px;
+  z-index: 4;
 
+  @media (max-width: $md3+px) {
+    display: block;
+  }
+}
 
+._burger::before {
+  transition: all 0.3s ease 0s;
+  @extend %burger;
+  top: 0;
+}
+._burger::after {
+  transition: all 0.3s ease 0s;
+  @extend %burger;
+  bottom: 0;
+}
+._burger.active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+._burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+._burger.active ._burgerSpan {
+  transform: scale(0);
+}
+._burgerSpan {
+  position: absolute;
+  z-index: 4;
+  background-color: $colorWhite;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 9px;
+  transition: all 0.3s ease 0s;
+}
+
+._menu {
+  @media (max-width: $md3+px) {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: $colorMain;
+    padding: 60px 10px 20px 10px;
+  }
+}
+._menu.active {
+  @media (max-width: $md3+px) {
+    top: 0;
+  }
+}
+
+//==============================================
 
 @import "bem/header.scss";
