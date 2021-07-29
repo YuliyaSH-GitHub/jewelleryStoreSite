@@ -16,10 +16,10 @@ body {
   max-width: $maxWidthContainer + px;
   padding: 0px 30px;
   margin: 0 auto;
-  @media (max-width: $md2+px)  {
+  @media (max-width: $md2+px) {
     padding: 0px 20px;
   }
-  @media (max-width: $md4+px)  {
+  @media (max-width: $md4+px) {
     padding: 0px 15px;
   }
 }
@@ -33,7 +33,6 @@ body {
   &:hover {
     color: $colorHover;
   }
- 
 }
 
 //==============================================
@@ -104,3 +103,4 @@ body {
 //==============================================
 
 @import "bem/header.scss";
+@import "bem/modernJewelry.scss";

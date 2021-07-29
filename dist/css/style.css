@@ -286,7 +286,7 @@ body.lock {
 }
 
 .b-header__wrapper {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -331,6 +331,117 @@ body.lock {
   margin: 0 25px 0 0;
 }
 
+.b-modernJewelry {
+  background-color: #e5e5e5;
+}
+
+.b-modernJewelry_indent {
+  padding: 300px 0;
+}
+
+.b-modernJewelry__wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.b-modernJewelry__imgWrap {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  max-width: 510px;
+  border-radius: 312.281px 312.281px 0px 0px;
+  overflow: hidden;
+}
+
+.b-modernJewelry__imgWrap_indent {
+  margin: 0 70px 0 0;
+}
+
+.b-modernJewelry__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.b-modernJewelry__mainTitle {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  z-index: 3;
+  max-width: 850px;
+  font-size: 90px;
+  line-height: 108px;
+}
+
+.b-modernJewelry__items {
+  max-width: 690px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 187px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 48px;
+}
+
+.b-modernJewelry__items_indent {
+  margin: 0 0 146px 0;
+}
+
+.b-modernJewelry__title {
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+}
+
+.b-modernJewelry__text {
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@media (max-width: 1440px) {
+  .b-modernJewelry_indent {
+    padding: 150px 0;
+  }
+
+  .b-modernJewelry__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .b-modernJewelry__mainTitle {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    text-align: center;
+    grid-column: 1/-1;
+  }
+
+  .b-modernJewelry__items_indent {
+    margin: 0 0 100px 0;
+  }
+}
+
 @media (max-width: 991.98px) {
   ._container {
     padding: 0px 20px;
@@ -342,6 +453,44 @@ body.lock {
 
   .b-header__navIcon:not(:last-child) {
     margin: 0 20px 0 0;
+  }
+
+  .b-modernJewelry_indent {
+    padding: 100px 0;
+  }
+
+  .b-modernJewelry__mainTitle {
+    font-size: 70px;
+    line-height: 88px;
+  }
+
+  .b-modernJewelry__items {
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: minmax(40px, auto);
+    grid-auto-flow: row;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .b-modernJewelry__items_indent {
+    margin: 0 0 50px 0;
+  }
+
+  .b-modernJewelry__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .b-modernJewelry__text {
+    grid-column: 1/-1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .b-modernJewelry__text_indent {
+    padding: 10px 0 0 0;
   }
 }
 
@@ -399,6 +548,46 @@ body.lock {
     font-size: 40px;
     line-height: 50px;
   }
+
+  .b-modernJewelry_indent {
+    padding: 60px 0;
+  }
+
+  .b-modernJewelry__wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .b-modernJewelry__imgWrap {
+    max-width: 400px;
+  }
+
+  .b-modernJewelry__imgWrap_indent {
+    margin: 0 auto;
+  }
+
+  .b-modernJewelry__mainTitle {
+    font-size: 60px;
+    line-height: 78px;
+  }
+
+  .b-modernJewelry__items {
+    grid-template-columns: 0.2fr 1fr;
+    row-gap: 10px;
+  }
+
+  .b-modernJewelry__items_indent {
+    margin: 0 0 0 0;
+  }
+
+  .b-modernJewelry__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .b-modernJewelry__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -426,5 +615,28 @@ body.lock {
 
   .b-header__navIcon:not(:last-child) {
     margin: 0 10px 0 0;
+  }
+
+  .b-modernJewelry_indent {
+    padding: 30px 0;
+  }
+
+  .b-modernJewelry__mainTitle {
+    font-size: 46px;
+    line-height: 54px;
+  }
+
+  .b-modernJewelry__items {
+    row-gap: 5px;
+  }
+
+  .b-modernJewelry__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .b-modernJewelry__text {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
