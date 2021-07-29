@@ -184,6 +184,19 @@ h6 {
   left: 0;
 }
 
+.b-ringsCollection__img,
+.b-balanceCollection__img,
+.b-bestsellers__img,
+.b-modernJewelry__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 body {
   color: #35271d;
 }
@@ -374,15 +387,6 @@ body.lock {
   margin: 0 70px 0 0;
 }
 
-.b-modernJewelry__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
 .b-modernJewelry__mainTitle {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -448,15 +452,6 @@ body.lock {
   position: relative;
   max-width: 450px;
   max-height: 550px;
-}
-
-.b-bestsellers__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
 .b-bestsellers__like {
@@ -535,16 +530,6 @@ body.lock {
   max-height: 364px;
 }
 
-.b-balanceCollection__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-}
-
 .b-balanceCollection__items {
   min-height: 672px;
   width: calc(50% - 50px);
@@ -610,6 +595,66 @@ body.lock {
 
 .b-balanceCollection__linkIcon {
   font-size: 44px;
+}
+
+.b-ringsCollection_indent {
+  padding: 100px 0 160px;
+}
+
+.b-ringsCollection__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-ringsCollection__items_indent {
+  margin: 0 15px 0 0;
+}
+
+.b-ringsCollection__title {
+  font-size: 90px;
+  line-height: 108px;
+}
+
+.b-ringsCollection__title_indent {
+  margin: 0 0 68px 0;
+}
+
+.b-ringsCollection__link {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: inherit;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: uppercase;
+  max-width: 218px;
+  min-height: 44px;
+}
+
+.b-ringsCollection__link:hover {
+  color: #775841;
+}
+
+.b-ringsCollection__linkIcon {
+  font-size: 44px;
+}
+
+.b-ringsCollection__imgItem {
+  max-width: 510px;
+  max-height: 623px;
 }
 
 @media (min-width: 1024px) {
@@ -782,7 +827,7 @@ body.lock {
   }
 
   .b-bestsellers_indent {
-    padding: 20px 0 80px;
+    padding: 20px 0 40px;
   }
 
   .b-bestsellers__title {
@@ -790,8 +835,12 @@ body.lock {
     line-height: 88px;
   }
 
+  .b-bestsellers__title_indent {
+    margin: 0 0 50px 0;
+  }
+
   .b-balanceCollection_indent {
-    padding: 80px 0 100px;
+    padding: 50px 0 50px;
   }
 
   .b-balanceCollection__imgWrap {
@@ -823,6 +872,30 @@ body.lock {
   .b-balanceCollection__text {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .b-ringsCollection_indent {
+    padding: 50px 0 50px;
+  }
+
+  .b-ringsCollection__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .b-ringsCollection__items_indent {
+    margin: 25px 0 0 0;
+  }
+
+  .b-ringsCollection__title {
+    font-size: 70px;
+    line-height: 88px;
+  }
+
+  .b-ringsCollection__title_indent {
+    margin: 0 0 50px 0;
   }
 }
 
@@ -877,7 +950,7 @@ body.lock {
   }
 
   .b-bestsellers_indent {
-    padding: 20px 0 50px;
+    padding: 20px 0 30px;
   }
 
   .b-bestsellers__title {
@@ -886,11 +959,11 @@ body.lock {
   }
 
   .b-bestsellers__title_indent {
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
   }
 
   .b-balanceCollection_indent {
-    padding: 50px 0 60px;
+    padding: 40px 0 50px;
   }
 
   .b-balanceCollection__title {
@@ -901,6 +974,19 @@ body.lock {
   .b-balanceCollection__text {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .b-ringsCollection_indent {
+    padding: 40px 0 50px;
+  }
+
+  .b-ringsCollection__title {
+    font-size: 60px;
+    line-height: 78px;
+  }
+
+  .b-ringsCollection__title_indent {
+    margin: 0 0 40px 0;
   }
 }
 
@@ -955,7 +1041,7 @@ body.lock {
   }
 
   .b-bestsellers_indent {
-    padding: 20px 0 30px;
+    padding: 20px 0 20px;
   }
 
   .b-bestsellers__title {
@@ -964,7 +1050,7 @@ body.lock {
   }
 
   .b-bestsellers__title_indent {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
   }
 
   .b-bestsellers__goodsName {
@@ -1013,6 +1099,29 @@ body.lock {
   }
 
   .b-balanceCollection__linkIcon {
+    font-size: 34px;
+  }
+
+  .b-ringsCollection_indent {
+    padding: 30px 0 30px;
+  }
+
+  .b-ringsCollection__title {
+    font-size: 46px;
+    line-height: 54px;
+  }
+
+  .b-ringsCollection__title_indent {
+    margin: 0 0 20px 0;
+  }
+
+  .b-ringsCollection__link {
+    font-size: 18px;
+    min-height: 34px;
+    max-width: 170px;
+  }
+
+  .b-ringsCollection__linkIcon {
     font-size: 34px;
   }
 }

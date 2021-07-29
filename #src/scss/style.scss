@@ -18,6 +18,13 @@
   height: 3px;
   left: 0;
 }
+%img {
+  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 body {
   color: $colorMain;
@@ -121,3 +128,4 @@ body {
 @import "bem/modernJewelry.scss";
 @import "bem/bestsellers.scss";
 @import "bem/balanceCollection.scss";
+@import "bem/ringsCollection.scss";
