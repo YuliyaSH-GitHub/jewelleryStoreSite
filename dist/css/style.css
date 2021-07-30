@@ -224,6 +224,10 @@ body {
   color: #cfb88f;
 }
 
+._border {
+  border: 1px solid #decfb3 !important;
+}
+
 .b-main {
   background-color: #e5e5e5;
 }
@@ -722,6 +726,114 @@ body.lock {
   max-height: 642px;
 }
 
+.b-signUp_indent {
+  padding: 150px 0 150px;
+}
+
+.b-signUp__back {
+  background: url("../../img/main/back1.jpg") center/cover no-repeat;
+  background: url("../../img/main/back1.webp") center/cover no-repeat;
+  min-height: 700px;
+  -webkit-transition: min-height 0.3s ease 0s;
+  -o-transition: min-height 0.3s ease 0s;
+  transition: min-height 0.3s ease 0s;
+}
+
+.b-signUp__wrap {
+  max-width: 773px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.b-signUp__title {
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.b-signUp__title_indent {
+  margin: 77px 0 50px 0;
+}
+
+.b-signUp__form {
+  width: 100%;
+}
+
+.b-signUp__inputEmail {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.b-signUp__email {
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 26px 20px;
+  width: 100%;
+}
+
+.b-signUp__email::-webkit-input-placeholder {
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.b-signUp__email::-moz-placeholder {
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.b-signUp__email:-ms-input-placeholder {
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.b-signUp__email::-ms-input-placeholder {
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.b-signUp__email::placeholder {
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.b-signUp__inputIcon {
+  position: absolute;
+  top: 29.5px;
+  right: 25px;
+  width: 62px;
+  height: 12px;
+  color: #fff;
+}
+
+.b-signUp__inputIcon:hover {
+  color: #decfb3;
+}
+
 @media (min-width: 1024px) {
   .b-header__navLinks {
     -webkit-box-flex: 0;
@@ -986,6 +1098,31 @@ body.lock {
   .b-comeToSay__title_indent {
     margin: 0 0 50px 0;
   }
+
+  .b-signUp_indent {
+    padding: 50px 0 50px;
+  }
+
+  .b-signUp__wrap {
+    max-width: 680px;
+  }
+
+  .b-signUp__title_indent {
+    margin: 50px 0 40px 0;
+  }
+
+  .b-signUp__inputEmail {
+    max-width: 500px;
+  }
+
+  .b-signUp__email {
+    padding: 22px 18px;
+  }
+
+  .b-signUp__inputIcon {
+    top: 25.5px;
+    right: 23px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1089,6 +1226,61 @@ body.lock {
 
   .b-comeToSay__title_indent {
     margin: 0 0 40px 0;
+  }
+
+  .b-signUp_indent {
+    padding: 40px 0 50px;
+  }
+
+  .b-signUp__back {
+    min-height: 600px;
+  }
+
+  .b-signUp__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .b-signUp__title_indent {
+    margin: 40px 0 30px 0;
+  }
+
+  .b-signUp__inputEmail {
+    max-width: 390px;
+  }
+
+  .b-signUp__email {
+    padding: 20px 16px;
+  }
+
+  .b-signUp__email::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .b-signUp__email::-moz-placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .b-signUp__email:-ms-input-placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .b-signUp__email::-ms-input-placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .b-signUp__email::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .b-signUp__inputIcon {
+    top: 23.5px;
+    right: 21px;
   }
 }
 
@@ -1248,6 +1440,64 @@ body.lock {
 
   .b-comeToSay__linkIcon {
     font-size: 34px;
+  }
+
+  .b-signUp_indent {
+    padding: 30px 0 30px;
+  }
+
+  .b-signUp__back {
+    min-height: 400px;
+  }
+
+  .b-signUp__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .b-signUp__title_indent {
+    margin: 20px 0 20px 0;
+  }
+
+  .b-signUp__inputEmail {
+    max-width: 260px;
+  }
+
+  .b-signUp__email {
+    padding: 14px 12px;
+  }
+
+  .b-signUp__email::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .b-signUp__email::-moz-placeholder {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .b-signUp__email:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .b-signUp__email::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .b-signUp__email::placeholder {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .b-signUp__inputIcon {
+    width: 50px;
+    height: 10px;
+    font-size: 10px;
+    top: 19px;
+    right: 12px;
   }
 }
 

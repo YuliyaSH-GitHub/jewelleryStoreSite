@@ -1,0 +1,142 @@
+.b-signUp {
+  &_indent {
+    padding: 150px 0 150px;
+    @media (max-width: $md2+px) {
+      padding: 50px 0 50px;
+    }
+    @media (max-width: $md3+px) {
+      padding: 40px 0 50px;
+    }
+    @media (max-width: $md4+px) {
+      padding: 30px 0 30px;
+    }
+  }
+  &__back {
+    background: url("../../img/main/back1.jpg") center/cover no-repeat;
+    background: url("../../img/main/back1.webp") center/cover no-repeat;
+    min-height: 700px;
+    transition: min-height 0.3s ease 0s;
+    @media (max-width: $md3+px) {
+      min-height: 600px;
+    }
+    @media (max-width: $md4+px) {
+      min-height: 400px;
+    }
+  }
+  &__wrap {
+    max-width: 773px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: $md2+px) {
+      max-width: 680px;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: $colorWhite;
+    @media (max-width: $md3+px) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media (max-width: $md4+px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &_indent {
+      margin: 77px 0 50px 0;
+      @media (max-width: $md2+px) {
+        margin: 50px 0 40px 0;
+      }
+      @media (max-width: $md3+px) {
+        margin: 40px 0 30px 0;
+      }
+      @media (max-width: $md4+px) {
+        margin: 20px 0 20px 0;
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+  }
+  &__inputEmail {
+    transition: all 0.3s ease 0s;
+    position: relative;
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+
+    @media (max-width: $md2+px) {
+      max-width: 500px;
+    }
+    @media (max-width: $md3+px) {
+      max-width: 390px;
+    }
+    @media (max-width: $md4+px) {
+      max-width: 260px;
+    }
+  }
+
+  &__email {
+    border: 1px solid $colorWhite;
+    background-color: transparent;
+    padding: 26px 20px;
+    width: 100%;
+
+    @media (max-width: $md2+px) {
+      padding: 22px 18px;
+    }
+    @media (max-width: $md3+px) {
+      padding: 20px 16px;
+    }
+    @media (max-width: $md4+px) {
+      padding: 14px 12px;
+    }
+
+    &::placeholder {
+      font-size: 22px;
+      line-height: 32px;
+      color: $colorWhite;
+      @media (max-width: $md3+px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      @media (max-width: $md4+px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+  &__inputIcon {
+    position: absolute;
+    top: 29.5px;
+    right: 25px;
+    width: 62px;
+    height: 12px;
+    color: $colorWhite;
+    @media (max-width: $md2+px) {
+      top: 25.5px;
+      right: 23px;
+    }
+    @media (max-width: $md3+px) {
+      top: 23.5px;
+      right: 21px;
+    }
+    @media (max-width: $md4+px) {
+      width: 50px;
+      height: 10px;
+      font-size: 10px;
+      top: 19px;
+      right: 12px;
+    }
+    &:hover {
+      color: lighten($colorHover, 10%);
+    }
+  }
+}
