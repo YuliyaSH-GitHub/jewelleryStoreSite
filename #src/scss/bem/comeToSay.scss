@@ -1,6 +1,6 @@
-.b-ringsCollection {
+.b-comeToSay {
     &_indent {
-        padding: 100px 0 160px;
+        padding: 160px 0 150px;
         @media (max-width: $md2+px) {
           padding: 50px 0 50px;
         }
@@ -15,6 +15,7 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     @media (max-width: $md2+px) {
         flex-direction: column-reverse;
     }
@@ -47,7 +48,7 @@
       line-height: 54px;
     }
     &_indent {
-        margin: 0 0 68px 0;
+        margin: 0 0 70px 0;
         @media (max-width: $md2+px) {
             margin: 0 0 50px 0;
           }
@@ -89,8 +90,8 @@
   }
 
   &__imgItem {
-    max-width: 510px;
-    max-height: 623px;
+    max-width: 660px;
+    max-height: 642px;
   }
 
   &__img {

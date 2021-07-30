@@ -184,8 +184,9 @@ h6 {
   left: 0;
 }
 
-.b-ringsCollection__img,
-.b-balanceCollection__img,
+.b-comeToSay__img,
+.b-rings__img,
+.b-balance__img,
 .b-bestsellers__img,
 .b-modernJewelry__img {
   display: block;
@@ -492,11 +493,11 @@ body.lock {
   line-height: 27px;
 }
 
-.b-balanceCollection_indent {
+.b-balance_indent {
   padding: 100px 0 160px;
 }
 
-.b-balanceCollection__wrap {
+.b-balance__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,7 +505,7 @@ body.lock {
       flex-wrap: wrap;
 }
 
-.b-balanceCollection__imgWrap {
+.b-balance__imgWrap {
   width: calc(50% - 50px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,14 +513,14 @@ body.lock {
   position: relative;
 }
 
-.b-balanceCollection__imgItem:first-child {
+.b-balance__imgItem:first-child {
   max-width: 400px;
   max-height: 672px;
   border-radius: 312.281px 312.281px 0px 0px;
   overflow: hidden;
 }
 
-.b-balanceCollection__imgItem:last-child {
+.b-balance__imgItem:last-child {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -530,7 +531,7 @@ body.lock {
   max-height: 364px;
 }
 
-.b-balanceCollection__items {
+.b-balance__items {
   min-height: 672px;
   width: calc(50% - 50px);
   display: -webkit-box;
@@ -545,30 +546,30 @@ body.lock {
           justify-content: space-between;
 }
 
-.b-balanceCollection__items_indent {
+.b-balance__items_indent {
   margin: 0 0 0 100px;
 }
 
-.b-balanceCollection__title {
+.b-balance__title {
   font-size: 90px;
   line-height: 108px;
 }
 
-.b-balanceCollection__textItem_indent {
+.b-balance__textItem_indent {
   margin: 15px 0;
 }
 
-.b-balanceCollection__text {
+.b-balance__text {
   font-weight: 350;
   font-size: 18px;
   line-height: 27px;
 }
 
-.b-balanceCollection__text:not(:last-child) {
+.b-balance__text:not(:last-child) {
   margin-bottom: 35px;
 }
 
-.b-balanceCollection__link {
+.b-balance__link {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -589,19 +590,19 @@ body.lock {
   min-height: 44px;
 }
 
-.b-balanceCollection__link:hover {
+.b-balance__link:hover {
   color: #775841;
 }
 
-.b-balanceCollection__linkIcon {
+.b-balance__linkIcon {
   font-size: 44px;
 }
 
-.b-ringsCollection_indent {
+.b-rings_indent {
   padding: 100px 0 160px;
 }
 
-.b-ringsCollection__wrap {
+.b-rings__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,20 +611,20 @@ body.lock {
           justify-content: space-between;
 }
 
-.b-ringsCollection__items_indent {
+.b-rings__items_indent {
   margin: 0 15px 0 0;
 }
 
-.b-ringsCollection__title {
+.b-rings__title {
   font-size: 90px;
   line-height: 108px;
 }
 
-.b-ringsCollection__title_indent {
-  margin: 0 0 68px 0;
+.b-rings__title_indent {
+  margin: 0 0 70px 0;
 }
 
-.b-ringsCollection__link {
+.b-rings__link {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -644,17 +645,81 @@ body.lock {
   min-height: 44px;
 }
 
-.b-ringsCollection__link:hover {
+.b-rings__link:hover {
   color: #775841;
 }
 
-.b-ringsCollection__linkIcon {
+.b-rings__linkIcon {
   font-size: 44px;
 }
 
-.b-ringsCollection__imgItem {
+.b-rings__imgItem {
   max-width: 510px;
   max-height: 623px;
+}
+
+.b-comeToSay_indent {
+  padding: 160px 0 150px;
+}
+
+.b-comeToSay__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.b-comeToSay__items_indent {
+  margin: 0 15px 0 0;
+}
+
+.b-comeToSay__title {
+  font-size: 90px;
+  line-height: 108px;
+}
+
+.b-comeToSay__title_indent {
+  margin: 0 0 70px 0;
+}
+
+.b-comeToSay__link {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: inherit;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: uppercase;
+  max-width: 218px;
+  min-height: 44px;
+}
+
+.b-comeToSay__link:hover {
+  color: #775841;
+}
+
+.b-comeToSay__linkIcon {
+  font-size: 44px;
+}
+
+.b-comeToSay__imgItem {
+  max-width: 660px;
+  max-height: 642px;
 }
 
 @media (min-width: 1024px) {
@@ -707,19 +772,19 @@ body.lock {
             justify-content: center;
   }
 
-  .b-balanceCollection__imgWrap {
+  .b-balance__imgWrap {
     width: calc(50% - 15px);
   }
 
-  .b-balanceCollection__imgItem:last-child {
+  .b-balance__imgItem:last-child {
     top: 235px;
   }
 
-  .b-balanceCollection__items {
+  .b-balance__items {
     width: calc(50% - 15px);
   }
 
-  .b-balanceCollection__items_indent {
+  .b-balance__items_indent {
     margin: 0 0 0 30px;
   }
 }
@@ -839,62 +904,86 @@ body.lock {
     margin: 0 0 50px 0;
   }
 
-  .b-balanceCollection_indent {
+  .b-balance_indent {
     padding: 50px 0 50px;
   }
 
-  .b-balanceCollection__imgWrap {
+  .b-balance__imgWrap {
     width: calc(100% - 10px);
   }
 
-  .b-balanceCollection__imgItem:last-child {
+  .b-balance__imgItem:last-child {
     left: 30%;
   }
 
-  .b-balanceCollection__items {
+  .b-balance__items {
     min-height: 320px;
     width: calc(100% - 10px);
   }
 
-  .b-balanceCollection__items_indent {
+  .b-balance__items_indent {
     margin: 25px 0 0 20px;
   }
 
-  .b-balanceCollection__title {
+  .b-balance__title {
     font-size: 70px;
     line-height: 88px;
   }
 
-  .b-balanceCollection__text:not(:last-child) {
+  .b-balance__text:not(:last-child) {
     margin-bottom: 20px;
   }
 
-  .b-balanceCollection__text {
+  .b-balance__text {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .b-ringsCollection_indent {
+  .b-rings_indent {
     padding: 50px 0 50px;
   }
 
-  .b-ringsCollection__wrap {
+  .b-rings__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
 
-  .b-ringsCollection__items_indent {
+  .b-rings__items_indent {
     margin: 25px 0 0 0;
   }
 
-  .b-ringsCollection__title {
+  .b-rings__title {
     font-size: 70px;
     line-height: 88px;
   }
 
-  .b-ringsCollection__title_indent {
+  .b-rings__title_indent {
+    margin: 0 0 50px 0;
+  }
+
+  .b-comeToSay_indent {
+    padding: 50px 0 50px;
+  }
+
+  .b-comeToSay__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .b-comeToSay__items_indent {
+    margin: 25px 0 0 0;
+  }
+
+  .b-comeToSay__title {
+    font-size: 70px;
+    line-height: 88px;
+  }
+
+  .b-comeToSay__title_indent {
     margin: 0 0 50px 0;
   }
 }
@@ -962,30 +1051,43 @@ body.lock {
     margin: 0 0 40px 0;
   }
 
-  .b-balanceCollection_indent {
+  .b-balance_indent {
     padding: 40px 0 50px;
   }
 
-  .b-balanceCollection__title {
+  .b-balance__title {
     font-size: 60px;
     line-height: 78px;
   }
 
-  .b-balanceCollection__text {
+  .b-balance__text {
     font-size: 14px;
     line-height: 20px;
   }
 
-  .b-ringsCollection_indent {
+  .b-rings_indent {
     padding: 40px 0 50px;
   }
 
-  .b-ringsCollection__title {
+  .b-rings__title {
     font-size: 60px;
     line-height: 78px;
   }
 
-  .b-ringsCollection__title_indent {
+  .b-rings__title_indent {
+    margin: 0 0 40px 0;
+  }
+
+  .b-comeToSay_indent {
+    padding: 40px 0 50px;
+  }
+
+  .b-comeToSay__title {
+    font-size: 60px;
+    line-height: 78px;
+  }
+
+  .b-comeToSay__title_indent {
     margin: 0 0 40px 0;
   }
 }
@@ -1067,61 +1169,84 @@ body.lock {
     line-height: 25px;
   }
 
-  .b-balanceCollection_indent {
+  .b-balance_indent {
     padding: 30px 0 30px;
   }
 
-  .b-balanceCollection__imgWrap {
+  .b-balance__imgWrap {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 
-  .b-balanceCollection__imgItem:last-child {
+  .b-balance__imgItem:last-child {
     display: none;
   }
 
-  .b-balanceCollection__title {
+  .b-balance__title {
     font-size: 46px;
     line-height: 54px;
   }
 
-  .b-balanceCollection__text {
+  .b-balance__text {
     font-size: 12px;
     line-height: 18px;
   }
 
-  .b-balanceCollection__link {
+  .b-balance__link {
     font-size: 18px;
     min-height: 34px;
     max-width: 170px;
   }
 
-  .b-balanceCollection__linkIcon {
+  .b-balance__linkIcon {
     font-size: 34px;
   }
 
-  .b-ringsCollection_indent {
+  .b-rings_indent {
     padding: 30px 0 30px;
   }
 
-  .b-ringsCollection__title {
+  .b-rings__title {
     font-size: 46px;
     line-height: 54px;
   }
 
-  .b-ringsCollection__title_indent {
+  .b-rings__title_indent {
     margin: 0 0 20px 0;
   }
 
-  .b-ringsCollection__link {
+  .b-rings__link {
     font-size: 18px;
     min-height: 34px;
     max-width: 170px;
   }
 
-  .b-ringsCollection__linkIcon {
+  .b-rings__linkIcon {
+    font-size: 34px;
+  }
+
+  .b-comeToSay_indent {
+    padding: 30px 0 30px;
+  }
+
+  .b-comeToSay__title {
+    font-size: 46px;
+    line-height: 54px;
+  }
+
+  .b-comeToSay__title_indent {
+    margin: 0 0 20px 0;
+  }
+
+  .b-comeToSay__link {
+    font-size: 18px;
+    min-height: 34px;
+    max-width: 170px;
+  }
+
+  .b-comeToSay__linkIcon {
     font-size: 34px;
   }
 }
