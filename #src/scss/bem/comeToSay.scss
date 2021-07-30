@@ -5,7 +5,7 @@
           padding: 50px 0 50px;
         }
         @media (max-width: $md3+px) {
-          padding: 40px 0 50px;
+          padding: 40px 0 40px;
         }
         @media (max-width: $md4+px) {
           padding: 30px 0 30px;
@@ -14,7 +14,7 @@
 
   &__wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row-reverse;
     @media (max-width: $md2+px) {
         flex-direction: column-reverse;
@@ -22,8 +22,12 @@
   }
 
   &__items {
+     transition: all 0.3s ease 0s;
     &_indent {
-        margin: 0 15px 0 0;
+        margin: 0 0 0 75px;
+        @media (max-width: $maxWidthContainer+px) {
+          margin: 0 0 0 40px;
+        }
         @media (max-width: $md2+px) {
             margin: 25px 0 0 0;
         }
@@ -63,6 +67,7 @@
   }
 
   &__link {
+    @extend %familyCirce;
     transition: all 0.3s ease 0s;
     display: flex;
     align-items: center;

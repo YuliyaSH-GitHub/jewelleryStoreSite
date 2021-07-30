@@ -158,6 +158,7 @@
   }
 
   &__text {
+    @extend %familyCirce;
     font-weight: 350;
     font-size: 18px;
     line-height: 27px;

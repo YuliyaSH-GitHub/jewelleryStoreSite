@@ -1,3 +1,5 @@
 @@include('jquery/jquery.js')
+@@include('jquery/circletype.min.js')
 @@include('burger.js')
 @@include('input.js')
+@@include('circle.js')

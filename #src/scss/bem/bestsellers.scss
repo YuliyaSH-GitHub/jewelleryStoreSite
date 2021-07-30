@@ -58,7 +58,9 @@
       justify-content: center;
     }
   }
-
+  &__item {
+    @extend %familyCirce;
+  }
   &__itemImg {
     position: relative;
     max-width: 450px;
