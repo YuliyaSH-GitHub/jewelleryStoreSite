@@ -57,6 +57,9 @@
       justify-items: center;
       justify-content: center;
     }
+    @media (max-width: $md4+px) {
+      row-gap: 30px;
+    }
   }
   &__item {
     @extend %familyCirce;
@@ -98,7 +101,7 @@
     &_indent {
       margin: 20px 0 6px 0;
       @media (max-width: $md4+px) {
-        margin: 15px 0 5px 0;
+        margin: 10px 0 5px 0;
       }
     }
   }

@@ -356,8 +356,7 @@ body.lock {
 }
 
 .b-header {
-  background: url("../../img/header/back1.jpg") center/cover no-repeat;
-  background: url("../../img/header/back1.webp") center/cover no-repeat;
+  background: url("../img/header/back1.jpg") center/cover no-repeat;
   min-height: 700px;
   -webkit-transition: min-height 0.3s ease 0s;
   -o-transition: min-height 0.3s ease 0s;
@@ -794,8 +793,7 @@ body.lock {
 }
 
 .b-signUp__back {
-  background: url("../../img/main/back1.jpg") center/cover no-repeat;
-  background: url("../../img/main/back1.webp") center/cover no-repeat;
+  background: url("../img/main/back1.jpg") center/cover no-repeat;
   min-height: 700px;
   -webkit-transition: min-height 0.3s ease 0s;
   -o-transition: min-height 0.3s ease 0s;
@@ -1517,11 +1515,6 @@ body.lock {
     line-height: 40px;
   }
 
-  .b-modernJewelry__text {
-    font-size: 12px;
-    line-height: 18px;
-  }
-
   .b-bestsellers_indent {
     padding: 20px 0 20px;
   }
@@ -1535,13 +1528,17 @@ body.lock {
     margin: 0 0 20px 0;
   }
 
+  .b-bestsellers__items {
+    row-gap: 30px;
+  }
+
   .b-bestsellers__goodsName {
     font-size: 18px;
     line-height: 28px;
   }
 
   .b-bestsellers__goodsName_indent {
-    margin: 15px 0 5px 0;
+    margin: 10px 0 5px 0;
   }
 
   .b-bestsellers__price {
@@ -1567,11 +1564,6 @@ body.lock {
   .b-balance__title {
     font-size: 46px;
     line-height: 54px;
-  }
-
-  .b-balance__text {
-    font-size: 12px;
-    line-height: 18px;
   }
 
   .b-balance__link {
@@ -1690,8 +1682,8 @@ body.lock {
 
   .b-footer__copyrightText,
   .b-footer__title {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .b-footer_indent {
@@ -1699,7 +1691,9 @@ body.lock {
   }
 
   .b-footer__items {
-    grid-template-columns: 1fr;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
     row-gap: 20px;
     padding: 0 0 10px 0;
   }
@@ -1709,8 +1703,8 @@ body.lock {
   }
 
   .b-footer__link {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
     margin: 0 0 5px 0;
   }
 

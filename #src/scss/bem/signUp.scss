@@ -12,8 +12,7 @@
     }
   }
   &__back {
-    background: url("../../img/main/back1.jpg") center/cover no-repeat;
-    background: url("../../img/main/back1.webp") center/cover no-repeat;
+    background: url("../img/main/back1.jpg") center/cover no-repeat;
     min-height: 700px;
     transition: min-height 0.3s ease 0s;
     @media (max-width: $md3+px) {

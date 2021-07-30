@@ -9,8 +9,8 @@
     line-height: 30px;
   }
   @media (max-width: $md4+px) {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 .b-footer {
@@ -47,7 +47,7 @@
       row-gap: 30px;
     }
     @media (max-width: $md4+px) {
-      grid-template-columns: 1fr;
+      column-gap: 10px;
       row-gap: 20px;
       padding: 0 0 10px 0;
     }
@@ -80,8 +80,8 @@
       margin: 0 0 20px 0;
     }
     @media (max-width: $md4+px) {
-      font-size: 14px;
-      line-height: 22px;
+      font-size: 16px;
+      line-height: 24px;
       margin: 0 0 5px 0;
     }
   }
