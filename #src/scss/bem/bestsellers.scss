@@ -8,7 +8,7 @@
       padding: 20px 0 30px;
     }
     @media (max-width: $md4+px) {
-      padding: 20px 0 20px;
+      padding: 20px 0 40px;
     }
   }
 
@@ -53,7 +53,7 @@
     gap: 15px;
     @media (max-width: $maxWidthContainer+px) {
       grid-template-columns: repeat(auto-fit, minmax(290px, 450px));
-      gap: 20px;
+      gap: 35px;
       justify-items: center;
       justify-content: center;
     }
@@ -68,6 +68,10 @@
     position: relative;
     max-width: 450px;
     max-height: 550px;
+    @media (max-width: $md4+px) {
+      max-width: 300px;
+      max-height: 430px;
+    }
   }
 
   &__img {

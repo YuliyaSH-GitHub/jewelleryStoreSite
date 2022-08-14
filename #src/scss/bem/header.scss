@@ -11,7 +11,7 @@ body.lock {
 
 .b-header {
   background: url("../img/header/back1.jpg") center/cover no-repeat;
-  // background-image: url('../img/header/back1.jpg');
+  background: url("../img/header/back1.webp") center/cover no-repeat;
   min-height: 700px;
   transition: min-height 0.3s ease 0s;
   @media (max-width: $md3+px) {

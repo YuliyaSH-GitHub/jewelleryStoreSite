@@ -8,11 +8,12 @@
       padding: 40px 0 40px;
     }
     @media (max-width: $md4+px) {
-      padding: 30px 0 30px;
+      padding: 40px 0 30px;
     }
   }
   &__back {
     background: url("../img/main/back1.jpg") center/cover no-repeat;
+    background: url("../img/main/back1.webp") center/cover no-repeat;
     min-height: 700px;
     transition: min-height 0.3s ease 0s;
     @media (max-width: $md3+px) {

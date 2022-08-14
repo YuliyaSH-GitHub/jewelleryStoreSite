@@ -2,13 +2,13 @@
   &_indent {
     padding: 100px 0 160px;
     @media (max-width: $md2+px) {
-      padding: 50px 0 50px;
+      padding: 80px 0 60px;
     }
     @media (max-width: $md3+px) {
-      padding: 40px 0 40px;
+      padding: 60px 0 40px;
     }
     @media (max-width: $md4+px) {
-      padding: 30px 0 30px;
+      padding: 40px 0 30px;
     }
   }
 
@@ -29,9 +29,7 @@
     }
     @media (max-width: $md4+px) {
       width: 100%;
-      justify-content: center;
     }
-    
   }
   &__imgItem {
     &:first-child {
@@ -39,6 +37,9 @@
       max-height: 672px;
       border-radius: 312.281px 312.281px 0px 0px;
       overflow: hidden;
+      @media (max-width: $md4+px) {
+        max-width: 300px;
+      }
     }
     &:last-child {
       transition: all 0.5s ease 0s;
@@ -81,7 +82,10 @@
         margin: 0 0 0 30px;
       }
       @media (max-width: $md2+px) {
-        margin: 25px 0 0 20px;
+        margin: 25px 0 0 0;
+      }
+      @media (max-width: $md3+px) {
+        margin: 20px 0 0 0;
       }
     }
   }
@@ -131,7 +135,6 @@
       font-size: 14px;
       line-height: 20px;
     }
-
   }
 
   &__link {
